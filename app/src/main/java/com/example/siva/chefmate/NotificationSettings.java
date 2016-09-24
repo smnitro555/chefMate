@@ -8,5 +8,5 @@ public class NotificationSettings {
     public static String SenderId = "121517042703";
     public static String HubName = "chefMate";
     public static String HubListenConnectionString = "Endpoint=sb://timeralert.servicebus.windows.net/;SharedAccessKeyName=DefaultListenSharedAccessSignature;SharedAccessKey=JV4cgR4HY1owC99Prulm+vB2WMDvLUBezzS5jkE3i2I=";
-
+    public static String HubFullAccess = "Endpoint=sb://timeralert.servicebus.windows.net/;SharedAccessKeyName=DefaultFullSharedAccessSignature;SharedAccessKey=gYr4YdQOGQvWqVsA+nLEUb26j3tQgjNn8udD3Hw0giA=";
 }
