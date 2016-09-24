@@ -30,6 +30,8 @@ import android.util.Base64;
 import android.view.View;
 import android.widget.EditText;
 
+import static android.provider.AlarmClock.EXTRA_MESSAGE;
+
 public class MainActivity extends AppCompatActivity {
     public ProgressBar progressBar;
     public static MainActivity mainActivity;
@@ -51,8 +53,6 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
             }
         });
 
@@ -66,6 +66,11 @@ public class MainActivity extends AppCompatActivity {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
+    }
+
+    public void openTheRecipe(View v) {
+        Intent intent = new Intent(this, show_ingredients.class);
+        startActivity(intent);
     }
 
     @Override
