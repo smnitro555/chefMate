@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 23
+    compileSdkVersion 24
     buildToolsVersion "24.0.2"
     defaultConfig {
         applicationId "com.example.siva.chefmate"
@@ -34,7 +34,7 @@ dependencies {
     compile 'com.google.firebase:firebase-core:9.6.0'
     compile 'com.google.firebase:firebase-messaging:9.6.0'
     compile 'com.microsoft.azure:notification-hubs-android-sdk:0.4@aar'
-//    compile 'com.microsoft.azure:azure-notifications-handler:1.0.1@aar'
+    compile 'com.microsoft.azure:azure-notifications-handler:1.0.1@aar'
     testCompile 'junit:junit:4.12'
 }
 
